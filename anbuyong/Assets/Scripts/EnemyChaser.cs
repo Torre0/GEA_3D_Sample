@@ -1,24 +1,22 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyChaser : MonoBehaviour
 {
     public float moveSpeed = 2f;
-    public float detectRange = 15f;
-    public float attackRange = 1.5f;
+    public float detectRange = 15f;   // 이 안이면 추적
+    public float attackRange = 1.5f;  // 이 안이면 공격
     public int damage = 1;
     public float attackCooldown = 1f;
 
     Transform player;
     float lastAttackTime = -999f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         GameObject p = GameObject.FindWithTag("Player");
         if (p != null) player = p.transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (player == null) return;
