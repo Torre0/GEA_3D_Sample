@@ -21,6 +21,9 @@ public class BattleLog : MonoBehaviour
         }
         Debug.Log("총 데미지 " + Sum);
         Debug.Log("치명타 " + criticals.Count + " 회");
-        Debug.Log("치명타 " + criticals);
+        foreach (int critical in criticals)
+        {
+            Debug.Log("치명타 " + critical);
+        }
     }
 }

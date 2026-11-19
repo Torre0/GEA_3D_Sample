@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 907140466}
   - component: {fileID: 907140465}
   - component: {fileID: 907140464}
-  - component: {fileID: 907140463}
+  - component: {fileID: 907140468}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -393,20 +393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelSystem
   expPerKill: 35000
   killCount: 3
---- !u!114 &907140463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907140454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 491cf4d8043120e4cb815788d74e4f90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BattleLog
-  damages: b0040000ac0d000020030000e02e0000ac0d0000b6030000
-  criticalLine: 3000
 --- !u!114 &907140464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,6 +443,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21376c2b2f1ef9b4f84aa179700ee01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lesson11
+--- !u!114 &907140468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907140454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491cf4d8043120e4cb815788d74e4f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleLog
+  damages: b0040000ac0d000020030000e02e0000ac0d0000b6030000
+  criticalLine: 3000
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
