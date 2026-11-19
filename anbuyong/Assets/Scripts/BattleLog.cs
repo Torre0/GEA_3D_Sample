@@ -13,9 +13,14 @@ public class BattleLog : MonoBehaviour
         int Sum = 0;
         foreach (int damage in damages)
         {
-            
-                Sum += damage;
+            if(damage >= criticalLine)
+            {
+                criticals.Add(damage);
+            }
+            Sum += damage;
         }
         Debug.Log("총 데미지 " + Sum);
+        Debug.Log("치명타 " + criticals.Count + " 회");
+        Debug.Log("치명타 " + criticals);
     }
 }
